@@ -206,15 +206,40 @@
 
     
     
-    <div class="comments" id="comments">
-  <script src="https://utteranc.es/client.js"
-        repo="yiyuyan/yiyuyan.github.io"
-        issue-term="pathname"
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
+    
+<div class="comments" id="utterances-container"></div>
+<script>
+  (function() {
+    var container = document.getElementById('utterances-container');
+    if (!container) return;
+
+    var loadUtterances = function() {
+      if (container.querySelector('script.utterances')) return;
+      var script = document.createElement('script');
+      script.src = 'https://utteranc.es/client.js';
+      script.className = 'utterances';
+      script.setAttribute('repo', 'yiyuyan/yiyuyan.github.io');
+      script.setAttribute('issue-term', 'pathname');
+      script.setAttribute('theme', 'github-dark');
+      script.setAttribute('crossorigin', 'anonymous');
+      script.async = true;
+      container.appendChild(script);
+    };
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          loadUtterances();
+          observer.disconnect();
+        }
+      });
+      observer.observe(container);
+    } else {
+      loadUtterances();
+    }
+  })();
 </script>
-</div>
+
 
       <footer class="post-footer">
 
