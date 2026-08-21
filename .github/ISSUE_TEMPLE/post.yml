@@ -1,0 +1,23 @@
+name: Blog Post
+description: 创建一篇博客文章
+title: ""
+labels:
+  - post
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 创建博客文章
+
+        Issue 的标题会作为文章标题。
+
+  - type: textarea
+    id: content
+    attributes:
+      label: 文章内容
+      description: 使用 Markdown
+      placeholder: |
+        文章
+    validations:
+      required: true
