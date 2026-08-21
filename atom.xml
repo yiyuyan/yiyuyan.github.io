@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>commonplace</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>http://example.com/</id>
+  <link href="http://example.com/" rel="alternate"/>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, commonplace</rights>
+  <subtitle>个人博客</subtitle>
+  <title>commonplace's Blog</title>
+  <updated>2026-08-21T05:22:36.960Z</updated>
+  <entry>
+    <author>
+      <name>commonplace</name>
+    </author>
+    <content>
+      <![CDATA[<p>There’s nothing now.<br>Welcome to create posts.</p>]]>
+    </content>
+    <id>http://example.com/2026/08/21/welcome/</id>
+    <link href="http://example.com/2026/08/21/welcome/"/>
+    <published>2026-08-21T04:55:03.504Z</published>
+    <summary>
+      <![CDATA[<p>There’s nothing now.<br>Welcome to create posts.</p>]]>
+    </summary>
+    <title>Welcome to commonplace' Blog!</title>
+    <updated>2026-08-21T05:22:36.960Z</updated>
+  </entry>
+</feed>
